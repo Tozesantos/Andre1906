@@ -1,1 +1,80 @@
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dicas da Semana</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f6f1;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-safe {
+      background-color: #6ab7a8;
+      color: white;
+    }
+    .btn-safe:hover {
+      background-color: #579e91;
+    }
+    .btn-mistery {
+      background-color: #e4c78a;
+      color: #222;
+    }
+    .btn-mistery:hover {
+      background-color: #cbb577;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coisinhas que explorei esta semana 👀</h1>
+    <p>Gosto de partilhar algumas cenas que me chamaram atenção — uma conversa boa e uma descoberta pessoal. Nada de especial... ou será que sim?</p>
+
+    <!-- Botão neutro para podcast -->
+    <a href="https://open.spotify.com/show/SEU_PODCAST" target="_blank" class="btn btn-safe">
+      🎙 Ouvir a conversa que me marcou
+    </a>
+
+    <!-- Botão camuflado que leva ao link do casino -->
+    <a href="https://afrc.online" target="_blank" class="btn btn-mistery">
+      ❓ Ver aquilo que me deixou curioso
+    </a>
+  </div>
+</body>
+</html>
