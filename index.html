@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -22,16 +21,28 @@
     }
     .container {
       max-width: 500px;
-      padding: 40px 20px;
+      padding: 20px 10px;
     }
     h1 {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+    .social-icons {
+        margin-bottom: 10px;
+    }
+    .social-icons a {
+        color: #e4c78a;
+        font-size: 24px; /* Ícone menor */
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .social-icons a:hover {
+        color: #d1b77d;
     }
     p {
       font-size: 16px;
       line-height: 1.5;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     .btn {
       display: block;
@@ -53,6 +64,12 @@
     .btn-safe:hover {
       background-color: #579e91;
     }
+     .profile-img {
+            width: 140px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
     .btn-mistery {
       background-color: #e4c78a;
       color: #222;
@@ -64,26 +81,27 @@
 </head>
 <body>
   <div class="container">
+    <img src="Andre_1.jpg" alt="Foto de Perfil" class="profile-img">
     <h1>O que tenho falado nos storys! 👀</h1>
     <p>Vagabas vejam aquilo que eu tenho falado nos storys</p>
-
-    <!-- Botão neutro para podcast -->
-    <a href="https://www.youtube.com/watch?v=Ha4TgVDpV8Q" target="_blank" class="btn btn-safe">
-      <i class="fab fa-youtube"></i>
-        DDS - Rebeca Caldeira
-    </a>
-     <a href="https://open.spotify.com/episode/57nRhtjxsBf1yKZdYpuPWX?si=33cdfa2cc2374399" target="_blank" class="btn btn-safe">
-      <i class="fab fa-spotify"></i>
-        DDS - Rebeca Caldeira
-    </a>
-  
+    <div class="social-icons">
+        <a href="https://www.instagram.com/andrefrcosta/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+         <a href="https://www.tiktok.com/@andrefrcostaa" target="_blank" class="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="mailto:andrefilipereiscosta@gmail.com" class="email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.youtube.com/@poddescendodosalto" target="_blank" class="tiktok">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        
+    </div>
      <a href="https://lgamifuss.com/W5yVJ" target="_blank" class="btn btn-mistery">
      <i class="fas fa-drumstick-bite"></i>
        A Galinha que toda a gente ama!
-    </a>
-     <a href="https://lgamifuss.com/W5yVJ" target="_blank" class="btn btn-mistery">
-      <i class="fas fa-plane"></i>
-        O Aviãozinhoooooo!
     </a>
     <p>Se precisarem de ajuda, enviem-me mensagem! 😛</p>
   </div>
