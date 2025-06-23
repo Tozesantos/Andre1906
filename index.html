@@ -7,19 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Dicas da Semana</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f9f6f1;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f6f1;
+  color: #333;
+  text-align: center;
+}
     .container {
       max-width: 500px;
       padding: 20px 10px;
@@ -95,10 +90,58 @@
     justify-content: center;
     align-items: center !important;
   }
+  header {
+      background-color: #e4c78a; /* cor do banner */
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* centraliza conteúdo horizontal */
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      text-align: center;
+      flex: 1; /* ocupa o máximo possível para centralizar */
+    }
+    .search-container {
+      position: absolute;
+      right: 20px; /* botão à direita */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .search-container input[type="text"] {
+      padding: 5px 8px;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px 0 0 3px;
+      outline: none;
+    }
+    .search-container button {
+      padding: 6px 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #e4c78a;
+      color: white;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+    }
+    .search-container button:hover {
+      background-color: #e4c78a;
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+   <header>
+  <h1>Andre Costa</h1>
+  <div class="search-container">
+
+    <button><i class="fas fa-search"></i></button>
+  </div>
+  
+</header>
   <div class="container">
     <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
